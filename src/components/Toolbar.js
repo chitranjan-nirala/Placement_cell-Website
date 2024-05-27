@@ -2,6 +2,7 @@ import React from "react";
 import { NavLink, Link } from "react-router-dom";
 import ToggleButton from "./ToggleButton";
 import lg from "../assets/images/techno-indiauniversity-logo-black.png";
+
 const Toolbar = (props) => (
   <header className="toolbar">
     <nav className="toolbar_navigation">
@@ -9,7 +10,7 @@ const Toolbar = (props) => (
         <ToggleButton click={props.sideDrawerToggler} />
       </div>
       <Link to="/" style={{ textDecoration: "none", color: "white" }}>
-      <img src={lg} className="logo"/>
+        <img src={lg} className="logo" alt="Techno India University Logo"/>
       </Link>
       <div className="spacer" />
       <div className="nav-elements">
@@ -58,9 +59,8 @@ const Toolbar = (props) => (
               </NavLink>
             </div>
           </li>
-
           <li>
-            <NavLink to="/Student" exact className="activeclass">
+            <NavLink to="/Jobnotification" exact className="activeclass">
               Student
             </NavLink>
           </li>
@@ -74,21 +74,20 @@ const Toolbar = (props) => (
               Contact Us
             </NavLink>
           </li>
-<li className="dropdownmenu">
-  <button className="dropbtn">
-    <span>Login </span>
-    <i className="fa fa-caret-down" />
-  </button>
-  <div className="dropdown-content">
-    <Link to="/tpo-login" className="activeclass">
-      TPO
-    </Link>
-    <Link to="/student-login" className="activeclass">
-      Student
-    </Link>
-  </div>
-</li>
-
+          <li className="dropdownmenu">
+            <button className="dropbtn">
+              <span>Login </span>
+              <i className="fa fa-caret-down" />
+            </button>
+            <div className="dropdown-content">
+              <Link to="/tpo-login" className="activeclass">
+                TPO
+              </Link>
+              <Link to="/student-login" className="activeclass">
+                Student
+              </Link>
+            </div>
+          </li>
         </ul>
       </div>
     </nav>

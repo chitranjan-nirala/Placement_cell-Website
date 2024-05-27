@@ -1,6 +1,5 @@
 import React from "react";
 import TIU from "../assets/images/TIU.jpg";
-import { Link } from "react-router-dom";
 import Ex from "./ex";
 const Home = (props) => (
   <div>

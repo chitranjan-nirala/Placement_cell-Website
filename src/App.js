@@ -1,19 +1,14 @@
 import React, { Component, Fragment } from "react";
-import { Route, Switch } from "react-router-dom";
-
-import TPOLogin from "./components/TPOLogin";
-import TPODashboard from "./components/TPODashboard"; 
-import StudentLogin from "./components/StudentLogin";
-import StudentDashboard from "./components/StudentDashboard";
+import { Route, Routes } from "react-router-dom";
 import Footer from "./components/Footer";
-import "./App.css";
+import "./App.css"; 
 import Navbar from "./components/Navbar";
 import Home from "./components/Home";
 import OurRecruiters from "./components/OurRecruiters";
 import PlacementStats2020 from "./components/PlacementStats2020";
 import PlacementStats2021 from "./components/PlacementStats2021";
 import Procedure from "./components/Procedure";
-import Student from "./components/Student";
+import Jobnotification from "./components/Jobnotification"
 import ContactUs from "./components/ContactUs";
 import DirectorMessage from "./components/DirectorMessage";
 import TpoMessage from "./components/TpoMessage";
@@ -24,7 +19,13 @@ import Demographics from "./components/demographics";
 import Page404 from "./components/404";
 import AlumniSpeaks from "./components/AlumniSpeaks";
 import Placement2019 from './components/PlacementStats2019';
-import PlacementStats2022 from './components/PlacementStats2022'
+import PlacementStats2022 from './components/PlacementStats2022';
+import StudentLogin from './components/StudentLogin'; // Add this
+import StudentRegister from './components/StudentRegister'; // Add this
+import StudentDashboard from './components/StudentDashboard';
+import TpoDashboard from './components/TpoDashboard';
+import TpoLogin from './components/TpoLogin';
+import TpoRegistration from './components/TpoRegistration';
 
 class App extends Component {
   render() {
@@ -32,29 +33,31 @@ class App extends Component {
       <Fragment>
         <Navbar />
         <div className="main-page">
-          <Switch>
-            <Route path="/tpo-login" exact component={TPOLogin} />
-            <Route path="/tpo-dashboard" exact component={TPODashboard} />
-            <Route path="/student-login" exact component={StudentLogin} />
-            <Route path="/student-dashboard" exact component={StudentDashboard} />
-            <Route path="/alumni-speaks" exact component={AlumniSpeaks} />
-            <Route path="/facilities" exact component={Facilities} />
-            <Route path="/" exact component={Home} />
-            <Route path="/our-recruiters" exact component={OurRecruiters} />
-            <Route path="/placement-stats-2022" exact component={PlacementStats2022} />
-            <Route path="/placement-stats-2021" exact component={PlacementStats2021} />
-            <Route path="/placement-stats-2020" exact component={PlacementStats2020} />
-            <Route path="/placement-stats-2019" exact component={Placement2019} />
-            <Route path="/contact-us" exact component={ContactUs} />
-            <Route path="/procedure-and-policies" exact component={Procedure} />
-            <Route path="/Student" exact component={Student} />
-            <Route path="/message/director" exact component={DirectorMessage} />
-            <Route path="/message/tpo" exact component={TpoMessage} />
-            <Route path="/about-us" exact component={AboutUs} />
-            <Route path="/courses" exact component={Courses} />
-            <Route path="/demographics" exact component={Demographics} />
-            <Route to="/404" component={Page404} />
-          </Switch>
+          <Routes>
+            <Route path="/alumni-speaks" element={<AlumniSpeaks />} />
+            <Route path="/facilities" element={<Facilities />} />
+            <Route path="/" element={<Home />} />
+            <Route path="/our-recruiters" element={<OurRecruiters />} />
+            <Route path="/placement-stats-2022" element={<PlacementStats2022 />} />
+            <Route path="/placement-stats-2021" element={<PlacementStats2021 />} />
+            <Route path="/placement-stats-2020" element={<PlacementStats2020 />} />
+            <Route path="/placement-stats-2019" element={<Placement2019 />} />
+            <Route path="/contact-us" element={<ContactUs />} />
+            <Route path="/procedure-and-policies" element={<Procedure />} />
+            <Route path="/Jobnotification" element={<Jobnotification />} />
+            <Route path="/message/director" element={<DirectorMessage />} />
+            <Route path="/message/tpo" element={<TpoMessage />} />
+            <Route path="/about-us" element={<AboutUs />} />
+            <Route path="/courses" element={<Courses />} />
+            <Route path="/demographics" element={<Demographics />} />
+            <Route path="/student-login" element={<StudentLogin />} /> {/* Add this */}
+            <Route path="/student-register" element={<StudentRegister />} /> {/* Add this */}
+            <Route path="/tpo-login" element={<TpoLogin />} /> {/* Add this */}
+            <Route path="*" element={<Page404 />} />
+            <Route path="/student-dashboard" element={<StudentDashboard />} />
+            <Route path="/tpo-dashboard" element={<TpoDashboard />} />
+            <Route path="/tpo-register" element={<TpoRegistration />} />
+          </Routes>
         </div>
         <div className="footer-outer-wrapper">
           <Footer />

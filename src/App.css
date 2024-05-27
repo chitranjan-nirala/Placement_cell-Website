@@ -269,6 +269,7 @@ footer {
 
 .footer-inner-wrapper {
   display: flex;
+
   justify-content: space-around;
   width: 100%;
   flex-flow: row wrap;
@@ -374,6 +375,7 @@ body {
   letter-spacing: 3px;
   font-weight: 700;
 }
+
 
 /* //////////////////////////////////////////////// */
 
@@ -1741,7 +1743,6 @@ Card Component */
 }
 
 /*//................ TPOLogin ---------------------- */
-
 .login-container {
   display: flex;
   justify-content: center;
@@ -1817,7 +1818,7 @@ a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 95vh;
 }
 
 .login-content {
@@ -1882,6 +1883,77 @@ a:hover {
   text-decoration: underline;
 }
 
+/* ---------------------studentregistration---------------------------- */
+.student-registration-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 95vh;
+}
+
+.student-registration-content {
+  text-align: center;
+  width: 350px;
+}
+
+h2 {
+  color: #007bff;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  color: #495057;
+  font-weight: bold;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ced4da;
+  border-radius: 5px;
+}
+
+button[type="submit"] {
+  width: 100%;
+  padding: 12px;
+  font-size: 18px;
+  color: #fff;
+  background-color: #007bff;
+  border: 2px solid #0056b3;
+  border-radius: 5px;
+  cursor: pointer;
+  outline: none;
+}
+
+button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+.error-message {
+  color: #dc3545;
+  margin-top: 10px;
+}
+
+p {
+  margin-top: 20px;
+}
+
+a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+
 
 /* Studentcss------- */
 .student-container {
@@ -1937,4 +2009,235 @@ a:hover {
 .job-notifications-section a:hover,
 .downloadable-content-section a:hover {
   color: #ffd700;
+}
+/******************** student-dashboard *********************** */
+/* Student Dashboard Styles */
+.student-dashboard-container {
+  max-width: 800px;
+  margin: 100px auto;
+  padding: 30px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.student-dashboard-container h2 {
+  margin-bottom: 30px;
+  font-size: 28px;
+  color: #3114d2;
+  text-align: center;
+}
+
+.student-info {
+  margin-top: 30px;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+}
+
+.student-info p {
+  margin-bottom: 15px;
+  font-size: 18px;
+  color: #333;
+}
+
+.student-info strong {
+  font-weight: bold;
+}
+
+.loading,
+.error {
+  text-align: center;
+  font-size: 20px;
+  color: #666;
+  margin-top: 30px;
+}
+
+.error {
+  color: #ff0000;
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 30px;
+}
+
+.button-container button {
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #4a90e2;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.button-container button:hover {
+  background-color: #357ab8;
+}
+
+
+/* ******************************************Tpo-dashboard ******************************************** */
+/* tpo-dashboard.css */
+
+/* TPO Dashboard Styles */
+.tpo-dashboard-container {
+  max-width: 700px;
+  margin: 100px auto;
+  padding: 30px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Dashboard heading */
+.tpo-dashboard-container h2 {
+  color: #224bdf;
+  font-size: 28px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+/* TPO details section */
+.tpo-details {
+  background-color: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+/* TPO detail items */
+.tpo-detail-item {
+  margin-bottom: 15px;
+  font-size: 18px;
+  color: #333;
+}
+
+.tpo-detail-item strong {
+  font-weight: bold;
+}
+
+.tpo-detail-item span {
+  color: #666;
+}
+
+/* Button container */
+.button-container {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 30px;
+}
+
+.button-container button {
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #4a90e2;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.button-container button:hover {
+  background-color: #357ab8;
+}
+
+/* Loading and error messages */
+.loading,
+.error {
+  text-align: center;
+  font-size: 20px;
+  color: #666;
+  margin-top: 30px;
+}
+
+.error {
+  color: #ff0000;
+}
+
+
+
+
+/* ****************************************************Tpo-Registration************************************************************** */
+/* Styles for TPO Registration */
+
+.registration-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 95vh;
+}
+
+.registration-content {
+  text-align: center;
+  width: 400px;
+}
+
+h2 {
+  color: #007bff;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  color: #495057;
+  font-weight: bold;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ced4da;
+  border-radius: 5px;
+}
+
+button[type="submit"] {
+  width: 100%;
+  padding: 12px;
+  font-size: 18px;
+  color: #fff;
+  background-color: #007bff;
+  border: 2px solid #0056b3;
+  border-radius: 5px;
+  cursor: pointer;
+  outline: none;
+}
+
+button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+.error-message {
+  color: #dc3545;
+  margin-top: 10px;
+}
+
+p {
+  margin-top: 20px;
+}
+
+a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.password-mismatch {
+  color: red;
+  margin-top: 10px;
 }

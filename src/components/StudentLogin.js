@@ -1,81 +1,76 @@
-// StudentLogin.js
+import React, { useState } from 'react';
+import { Link, useNavigate } from 'react-router-dom';
+import axios from 'axios';
 
-import React, { Component } from "react";
-import { Link } from "react-router-dom";
+const StudentLogin = () => {
+  const [studentId, setStudentId] = useState('');
+  const [password, setPassword] = useState('');
+  const [error, setError] = useState(''); // State to store login error
+  const navigate = useNavigate();
 
-class StudentLogin extends Component {
-  constructor(props) {
-    super(props);
+  const handleLogin = async (e) => {
+    e.preventDefault();
 
-    this.state = {
-      username: "",
-      password: "",
-      error: "",
-    };
-  }
+    try {
+      const response = await axios.post('http://localhost:3000/api/student/login', {
+        studentId,
+        password,
+      });
 
-  handleInputChange = (event) => {
-    const { name, value } = event.target;
-    this.setState({ [name]: value, error: "" });
-  };
+      if (response.status === 200) {
+        // Extract token from response
+        const token = response.data.token;
+        
+        // Store token in local storage
+        localStorage.setItem('token', token);
 
-  handleLogin = () => {
-    const { username, password } = this.state;
-
-    // Simple validation (you can add more complex validation if needed)
-    if (!username || !password) {
-      this.setState({ error: "Please enter both username and password." });
-      return;
+        // Redirect to dashboard or perform other actions after successful login
+        navigate('/student-dashboard');
+      }
+    } catch (error) {
+      if (error.response && error.response.status === 401) {
+        setError('Invalid student ID or password');
+      } else if (error.response && error.response.status === 404) {
+        navigate('/student-register');
+      } else {
+        setError('Login failed. Please try again later.'); // Generic error message for other errors
+        console.error('Login error:', error);
+      }
     }
-
-    // Your student login logic here
-
-    // Redirect to student dashboard on successful login
-    this.props.history.push("/student-dashboard");
   };
 
-  render() {
-    return (
-      <div className="login-container">
-        <div className="login-content">
-          <h2>Login as Student</h2>
-
-          {/* Example: Add student login form fields */}
+  return (
+    <div className="login-container">
+      <div className="login-content">
+        <h2>Student Login</h2>
+        {error && <p style={{ color: 'red' }}>{error}</p>} {/* Display error message */}
+        <form onSubmit={handleLogin}>
           <div className="form-group">
-            <label htmlFor="username">Username:</label>
+            <label>Student ID</label>
             <input
               type="text"
-              id="username"
-              name="username"
-              value={this.state.username}
-              onChange={this.handleInputChange}
+              value={studentId}
+              onChange={(e) => setStudentId(e.target.value)}
+              required
             />
           </div>
-
           <div className="form-group">
-            <label htmlFor="password">Password:</label>
+            <label>Password</label>
             <input
               type="password"
-              id="password"
-              name="password"
-              value={this.state.password}
-              onChange={this.handleInputChange}
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
+              required
             />
           </div>
-
-          <button onClick={this.handleLogin} className="login-button">
-            Login
-          </button>
-
-          {this.state.error && <p className="error-message">{this.state.error}</p>}
-
-          <p>
-            Don't have an account? <Link to="/student-registration">Register</Link>
-          </p>
-        </div>
+          <button type="submit" className="login-button">Login</button>
+        </form>
+        <p>
+          Don't have an account? <Link to="/student-register">Register here</Link>
+        </p>
       </div>
-    );
-  }
-}
+    </div>
+  );
+};
 
 export default StudentLogin;
