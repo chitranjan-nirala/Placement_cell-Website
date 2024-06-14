@@ -61,7 +61,7 @@ const Toolbar = (props) => (
           </li>
           <li>
             <NavLink to="/Jobnotification" exact className="activeclass">
-              Student
+              Job Search
             </NavLink>
           </li>
           <li>

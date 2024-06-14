@@ -230,7 +230,7 @@
 }
 
 /* ////////////////////////////////////////////////// */
-/* Footer */
+/*******************************************************************Footer */
 
 body {
   display: flex;
@@ -377,7 +377,7 @@ body {
 }
 
 
-/* //////////////////////////////////////////////// */
+/* ////////////////////////////////////////////////8***********************Contact Us Page */
 
 /* Contact Us Page */
 
@@ -535,10 +535,12 @@ me .placement-team-heading {
   display: flex;
 }
 
+
+
 /* ///////////////////////////////////////////////////// */
 
 
-/* Why TIU Page */
+/* *************************************************************Why TIU Page */
 
 .whyus-o-container {
   display: flex;
@@ -555,7 +557,7 @@ me .placement-team-heading {
 
 /* ///////////////////////////////////////////////// */
 
-/* Procedure And Policies */
+/* **************************************************Procedure And Policies 8**************************/
 
 .custom-list {
   list-style: disc !important;
@@ -665,7 +667,7 @@ me .placement-team-heading {
   margin: 30px 0;
 }
 
-/*////--------------Home Page Component-------------////////////*/
+/*////--------------****************************************************Home Page Component-------------////////////*/
 
 .home-container {
   position: relative;
@@ -927,7 +929,7 @@ me .placement-team-heading {
 }
 /* /////////////////////////////////////////////// */
 
-/* Past Recruiters */
+/***************************************************************** Past-Recruiters****************************** */
 
 .pr-container {
   display: flex;
@@ -1031,9 +1033,7 @@ me .placement-team-heading {
   width: 150px;
   margin: 25px 10px;
 }
-
-/* ///////////////////////////////////////////////// */
-/* Placements Stats */
+/***********************************************************Placements Stats*************************************************/
 
 .ps-name-heading {
   margin: 20px 0;
@@ -1212,7 +1212,7 @@ me .placement-team-heading {
   font-weight: bold;
 }
 
-/* About  Page Component*/
+/***************************************************** About-Page Component***********************************************/
 .aboutUs-o-container {
   display: flex;
   justify-content: center;
@@ -1262,56 +1262,6 @@ text-align: center;
     width: 95%;
   }
 }
-
-
-
-
-
-
-
-/* 
-.abt1,
-.abt3 {
-  text-align: center;
-}
-
-.abt1 {
-  margin-top: 3vw;
-  color: black;
-}
-
-.abt3 {
-  margin-top: 10px;
-  margin-bottom: 20px;
-  color: navy;
-}
-.abt-text {
-  color: #19040e;
-  width: 70%;
-}
-
-.about-text-wrapper {
-  display: flex;
-  justify-content: center;
-}
-
-.abt-text p {
-  line-height: 1.5;
-  margin: 20px 0;
-  font-size: 1.4rem;
-}
-
-.aboutUs-container p {
-  margin: 20px 0;
-  color: #2b000e;
-}
-
-@media (max-width: 545px) {
-  .whyus-container {
-    width: 95%;
-  }
-} */
-/* Courses Components */
 
 .courses h1 {
   text-align: center;
@@ -1671,7 +1621,7 @@ Card Component */
 
 /* //////////////////////////////// */
 
-/* 404 Page */
+/* ********************************************************404 Page*************************************************** */
 
 .main-404 {
   text-align: center;
@@ -1742,502 +1692,914 @@ Card Component */
   margin-left: 1rem;
 }
 
-/*//................ TPOLogin ---------------------- */
+/*//................>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> TPOLogin >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>---------------------- */
+/* Reset default browser styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .login-container {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
+  background-color: #f8f9fa;
 }
 
 .login-content {
-  text-align: center;
-  width: 300px;
+  max-width: 400px;
+  padding: 40px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-h2 {
-  color: #007bff;
+.login-content h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #343a40;
+}
+
+.login-content p {
+  text-align: center;
+  margin-top: 10px;
 }
 
 .form-group {
   margin-bottom: 20px;
 }
 
-label {
-  display: block;
-  margin-bottom: 5px;
-  color: #495057;
+.form-group label {
   font-weight: bold;
+  color: #343a40;
 }
 
-input {
+.form-group input[type="text"],
+.form-group input[type="password"] {
   width: 100%;
   padding: 10px;
   font-size: 16px;
   border: 1px solid #ced4da;
-  border-radius: 5px;
+  border-radius: 4px;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.form-group input[type="text"]:focus,
+.form-group input[type="password"]:focus {
+  outline: none;
+  border-color: #80bdff;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
 }
 
 .login-button {
+  display: block;
   width: 100%;
   padding: 12px;
-  font-size: 18px;
-  color: #fff;
   background-color: #007bff;
-  border: 2px solid #0056b3;
-  border-radius: 5px;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
   cursor: pointer;
-  outline: none;
+  transition: background-color 0.3s;
 }
 
 .login-button:hover {
   background-color: #0056b3;
 }
 
-.error-message {
-  color: #dc3545;
+.login-content a {
+  display: block;
+  text-align: center;
   margin-top: 10px;
-}
-
-p {
-  margin-top: 20px;
-}
-
-a {
   color: #007bff;
   text-decoration: none;
+  transition: color 0.3s;
 }
 
-a:hover {
-  text-decoration: underline;
+.login-content a:hover {
+  color: #0056b3;
 }
 
-/*------------StudentLogin------------ */
+@media (max-width: 480px) {
+  .login-content {
+    padding: 20px;
+  }
+}
+
+/*------------*********************************************StudentLogin************************************------------ */
+/* Reset default browser styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 .login-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 95vh;
+  height: 100vh;
+  background-color: #f8f9fa;
 }
 
 .login-content {
-  text-align: center;
-  width: 300px;
+  max-width: 400px;
+  padding: 40px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-h2 {
-  color: #007bff;
+.login-content h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #343a40;
+}
+
+.login-content p {
+  text-align: center;
+  margin-top: 10px;
 }
 
 .form-group {
   margin-bottom: 20px;
 }
 
-label {
-  display: block;
-  margin-bottom: 5px;
-  color: #495057;
+.form-group label {
   font-weight: bold;
+  color: #343a40;
 }
 
-input {
+.form-group input[type="text"],
+.form-group input[type="password"] {
   width: 100%;
   padding: 10px;
   font-size: 16px;
   border: 1px solid #ced4da;
-  border-radius: 5px;
+  border-radius: 4px;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.form-group input[type="text"]:focus,
+.form-group input[type="password"]:focus {
+  outline: none;
+  border-color: #80bdff;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
 }
 
 .login-button {
+  display: block;
   width: 100%;
   padding: 12px;
-  font-size: 18px;
-  color: #fff;
   background-color: #007bff;
-  border: 2px solid #0056b3;
-  border-radius: 5px;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
   cursor: pointer;
-  outline: none;
+  transition: background-color 0.3s;
 }
 
 .login-button:hover {
   background-color: #0056b3;
 }
 
-.error-message {
-  color: #dc3545;
+.login-content a {
+  display: block;
+  text-align: center;
   margin-top: 10px;
+  color: #007bff;
+  text-decoration: none;
+  transition: color 0.3s;
 }
 
-p {
+.login-content a:hover {
+  color: #0056b3;
+}
+
+@media (max-width: 480px) {
+  .login-content {
+    padding: 20px;
+  }
+}
+
+
+/* ---------------------************************************studentregistration---------------------------- */
+/* Navbar styles */
+.navbar {
+  padding: 10px 0; /* Adjust top and bottom padding */
+}
+
+/* Container styles */
+.container {
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+  background-color: #f8f9fa; /* Lighter background color */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  margin-top: 20px; /* Space between navbar and form container */
+  margin-bottom: 20px; /* Space between form container and footer */
+}
+
+/* Form styles */
+.form-label {
+  font-weight: bold;
+  color: #495057; /* Darker text color */
+  margin-bottom: 8px;
+}
+
+.form-control {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  margin-bottom: 15px;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.form-control:focus {
+  outline: none;
+  border-color: #007bff; /* Primary color on focus */
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.invalid-feedback {
+  color: #dc3545;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+/* Two-column layout */
+.row.g-3 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* Adjust gap between columns */
+}
+
+.col-md-6 {
+  flex: 0 0 calc(50% - 30px);
+  max-width: calc(50% - 30px);
+}
+
+@media (max-width: 768px) {
+  .col-md-6 {
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-right: 0;
+  }
+}
+
+/* Button styles */
+.btn-primary {
+  background-color: #007bff; /* Primary button color */
+  color: #ffffff;
+  border: none;
+  padding: 12px 20px;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3; /* Darker shade on hover */
+}
+
+/* Checkbox styles */
+.form-check-input {
+  margin-top: 5px;
+}
+
+/* General styling */
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333333;
+}
+
+.error-message {
+  color: #dc3545;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+/* Form footer */
+.form-footer {
+  text-align: center;
   margin-top: 20px;
 }
 
-a {
-  color: #007bff;
-  text-decoration: none;
+/* Additional enhancements */
+.form-control::placeholder {
+  color: #adb5bd; /* Placeholder text color */
 }
 
-a:hover {
-  text-decoration: underline;
+.btn-primary:focus,
+.btn-primary:active {
+  outline: none; /* Remove outline on focus/active */
 }
 
-/* ---------------------studentregistration---------------------------- */
-.student-registration-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 95vh;
+/* Footer styles */
+.footer {
+ 
+  padding: 10px 0; /* Adjust top and bottom padding */
+  margin-top: 20px; /* Space between form container and footer */
+}
+#stream
+{
+  width: 60%;
+  height: 60%;
+
+}
+#gender
+{
+  width: 60%;
+  height: 15%;
 }
 
-.student-registration-content {
+#placementStatus{
+  width: 60%;
+  height: 60%;
+}
+/**************************************************job search css*******************************************------- */
+/* Reset default browser styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.notification-container {
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.notification-container h1 {
   text-align: center;
-  width: 350px;
-}
-
-h2 {
-  color: #007bff;
-}
-
-.form-group {
   margin-bottom: 20px;
+  color: #343a40;
 }
 
-label {
-  display: block;
-  margin-bottom: 5px;
-  color: #495057;
-  font-weight: bold;
+.error-message {
+  color: #dc3545;
+  font-size: 14px;
+  margin-top: 10px;
 }
 
-input {
-  width: 100%;
-  padding: 10px;
+.search-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.search-form input[type="text"],
+.search-form select {
+  flex: 1;
+  padding: 12px;
   font-size: 16px;
   border: 1px solid #ced4da;
-  border-radius: 5px;
+  border-radius: 4px;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 
-button[type="submit"] {
-  width: 100%;
-  padding: 12px;
-  font-size: 18px;
-  color: #fff;
+.search-form button {
   background-color: #007bff;
-  border: 2px solid #0056b3;
-  border-radius: 5px;
+  color: #ffffff;
+  border: none;
+  padding: 12px 20px;
+  font-size: 16px;
+  border-radius: 4px;
   cursor: pointer;
-  outline: none;
+  transition: background-color 0.3s;
 }
 
-button[type="submit"]:hover {
+.search-form button:hover {
   background-color: #0056b3;
 }
 
-.error-message {
-  color: #dc3545;
-  margin-top: 10px;
-}
-
-p {
-  margin-top: 20px;
-}
-
-a {
-  color: #007bff;
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
-
-
-/* Studentcss------- */
-.student-container {
-  background-image: url("C:\Users\chitranjan kumar\OneDrive\Desktop\Placement_cell-Website\src\assets\images\jobportal.jpg");
-  background-size: cover;
-  background-position: center;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.overlay {
-  background: rgba(2, 2, 2, 0.5); 
-  padding: 60px;
-  text-align: center;
-  color: #fff;
-  
-}
-.overlay h1{
-  color: #ebe9b5;
-  font-size:50px;
-  font-weight: bolder;
-}
-
-.job-notifications-section,
-.downloadable-content-section {
-  margin-top: 20px;
-}
-
-.job-notifications-section h3,
-.downloadable-content-section h3 {
-  color: #ffd700; /* Yellow color for section headings */
-}
-
-.job-notifications-section ul,
-.downloadable-content-section ul {
-  list-style-type: none;
+.notification-list {
+  list-style: none;
   padding: 0;
 }
 
-.job-notifications-section li,
-.downloadable-content-section li {
-  margin-bottom: 10px;
-}
-
-.job-notifications-section a,
-.downloadable-content-section a {
-  color: #fff;
-  text-decoration: underline;
-}
-
-.job-notifications-section a:hover,
-.downloadable-content-section a:hover {
-  color: #ffd700;
-}
-/******************** student-dashboard *********************** */
-/* Student Dashboard Styles */
-.student-dashboard-container {
-  max-width: 800px;
-  margin: 100px auto;
-  padding: 30px;
-  border: 1px solid #ddd;
-  border-radius: 10px;
-  background-color: #f9f9f9;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.student-dashboard-container h2 {
-  margin-bottom: 30px;
-  font-size: 28px;
-  color: #3114d2;
-  text-align: center;
-}
-
-.student-info {
-  margin-top: 30px;
+.notification-item {
+  background-color: #ffffff;
   padding: 20px;
-  background-color: #fff;
-  border: 1px solid #e0e0e0;
   border-radius: 8px;
-}
-
-.student-info p {
-  margin-bottom: 15px;
-  font-size: 18px;
-  color: #333;
-}
-
-.student-info strong {
-  font-weight: bold;
-}
-
-.loading,
-.error {
-  text-align: center;
-  font-size: 20px;
-  color: #666;
-  margin-top: 30px;
-}
-
-.error {
-  color: #ff0000;
-}
-
-.button-container {
-  display: flex;
-  justify-content: space-around;
-  margin-top: 30px;
-}
-
-.button-container button {
-  padding: 10px 20px;
-  font-size: 16px;
-  color: #fff;
-  background-color: #4a90e2;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
-
-.button-container button:hover {
-  background-color: #357ab8;
-}
-
-
-/* ******************************************Tpo-dashboard ******************************************** */
-/* tpo-dashboard.css */
-
-/* TPO Dashboard Styles */
-.tpo-dashboard-container {
-  max-width: 700px;
-  margin: 100px auto;
-  padding: 30px;
-  border: 1px solid #ddd;
-  border-radius: 10px;
-  background-color: #f9f9f9;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-/* Dashboard heading */
-.tpo-dashboard-container h2 {
-  color: #224bdf;
-  font-size: 28px;
-  margin-bottom: 30px;
-  text-align: center;
-}
-
-/* TPO details section */
-.tpo-details {
-  background-color: #fff;
-  border: 1px solid #e0e0e0;
-  border-radius: 8px;
-  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   margin-bottom: 20px;
 }
 
-/* TPO detail items */
-.tpo-detail-item {
-  margin-bottom: 15px;
-  font-size: 18px;
+.notification-item h2 {
+  color: #343a40;
+  margin-bottom: 10px;
+}
+
+.notification-item p {
+  color: #6c757d;
+  margin-bottom: 8px;
+}
+
+.notification-item strong {
+  font-weight: bold;
+  color: #343a40;
+}
+
+.notification-item a {
+  text-decoration: none;
+  color: #007bff;
+  transition: color 0.3s;
+}
+
+.notification-item a:hover {
+  text-decoration: underline;
+  color: #0056b3;
+}
+
+@media (max-width: 768px) {
+  .notification-container {
+    padding: 15px;
+  }
+
+  .search-form input[type="text"],
+  .search-form select {
+    font-size: 14px;
+  }
+
+  .notification-item {
+    padding: 15px;
+  }
+}
+
+
+/*********************************************************student-dashboard *********************** */
+/* Global styles */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+}
+
+.student-dashboard-container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.dashboard-heading {
+  text-align: center;
+  font-size: 32px;
+  color: #007bff;
+  margin-bottom: 20px;
+}
+
+.dashboard-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.profile-section {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  padding: 20px;
+  background: linear-gradient(to right, #ffffff, #f9f9f9);
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.profile-picture {
+  width: 140px;
+  height: 140px;
+  overflow: hidden;
+  border-radius: 50%;
+  margin-right: 30px;
+  border: 4px solid #ffffff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.profile-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.profile-details {
+  flex: 1;
+}
+
+.detail-item {
+  margin-bottom: 10px;
+  font-size: 16px;
   color: #333;
 }
 
-.tpo-detail-item strong {
-  font-weight: bold;
+.edit-profile-button {
+  padding: 12px 24px;
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
-.tpo-detail-item span {
-  color: #666;
+.edit-profile-button:hover {
+  background-color: #0056b3;
 }
 
-/* Button container */
-.button-container {
+.actions-section {
   display: flex;
   justify-content: space-around;
   margin-top: 30px;
 }
 
+.action-button {
+  flex: 1;
+  margin: 0 10px;
+  padding: 12px 24px;
+  background-color: #28a745;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.action-button:hover {
+  background-color: #218838;
+}
+
+.logout-button {
+  flex: 1;
+  margin: 0 10px;
+  padding: 12px 24px;
+  background-color: #dc3545;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.logout-button:hover {
+  background-color: #c82333;
+}
+
+.error-message {
+  text-align: center;
+  color: #dc3545;
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.loading-message {
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+.save{
+  padding:10px;
+ margin-right: 10px;
+ margin-top: 10px;
+align-items: center;
+ justify-content: center;
+ border-radius: 10px;
+ margin-left: 300px;
+
+
+}
+.cancel{
+  padding:10px;
+  margin-right: 10px;
+  margin-top: 10px;
+ align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+ 
+}
+#cv{
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+
+
+/* *****************************************************************Tpo-dashboard ******************************************** */
+/* TpoDashboard.css */
+
+/* Main container styling */
+.tpo-dashboard-container {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading styling */
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #007bff;
+}
+
+/* TPO details container */
+.tpo-details {
+  margin-bottom: 20px;
+  padding: 15px;
+  background-color: #ffffff;
+  border-radius: 4px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling for individual TPO detail items */
+.tpo-detail-item {
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+/* Company list container */
+.company-list-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+/* Company list columns */
+.company-list-column {
+  flex: 1;
+  margin: 0 10px;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.company-list-column h3 {
+  margin-bottom: 15px;
+  color: #007bff;
+}
+
+/* Button container styling */
+.button-container {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* General button styling */
 .button-container button {
+  margin: 0 10px;
   padding: 10px 20px;
   font-size: 16px;
-  color: #fff;
-  background-color: #4a90e2;
+  background-color: #007bff;
+  color: #ffffff;
   border: none;
-  border-radius: 5px;
+  border-radius: 4px;
   cursor: pointer;
-  transition: background-color 0.3s;
+  transition: background-color 0.3s ease;
 }
 
+/* Button hover effect */
 .button-container button:hover {
-  background-color: #357ab8;
+  background-color: #0056b3;
 }
 
-/* Loading and error messages */
-.loading,
-.error {
-  text-align: center;
-  font-size: 20px;
-  color: #666;
-  margin-top: 30px;
+/* Student list container */
+.student-list {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.error {
-  color: #ff0000;
+/* Student list table styling */
+.student-list table {
+  width: 100%;
+  border-collapse: collapse;
 }
 
+.student-list table th,
+.student-list table td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
 
+.student-list table th {
+  background-color: #f0f0f0;
+  color: #333;
+  font-weight: bold;
+}
+
+/* Logout button styling */
+.logout-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #dc3545;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Logout button hover effect */
+.logout-button:hover {
+  background-color: #c82333;
+}
+
+/* Responsive layout adjustments for smaller screens */
+@media (max-width: 768px) {
+  .company-list-container {
+    flex-direction: column;
+  }
+
+  .company-list-column {
+    margin: 0 0 20px;
+  }
+}
 
 
 /* ****************************************************Tpo-Registration************************************************************** */
-/* Styles for TPO Registration */
-
 .registration-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 95vh;
+  max-width: 500px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
 }
 
 .registration-content {
-  text-align: center;
-  width: 400px;
+  padding: 20px;
 }
 
 h2 {
+  text-align: center;
+  margin-bottom: 20px;
   color: #007bff;
 }
 
 .form-group {
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 
 label {
-  display: block;
-  margin-bottom: 5px;
-  color: #495057;
   font-weight: bold;
 }
 
-input {
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="password"] {
   width: 100%;
   padding: 10px;
   font-size: 16px;
-  border: 1px solid #ced4da;
-  border-radius: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  transition: border-color 0.3s ease;
 }
 
-button[type="submit"] {
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+input[type="password"]:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+.registration-button {
+  display: block;
   width: 100%;
   padding: 12px;
-  font-size: 18px;
-  color: #fff;
+  margin-top: 20px;
   background-color: #007bff;
-  border: 2px solid #0056b3;
-  border-radius: 5px;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
   cursor: pointer;
-  outline: none;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
 }
 
-button[type="submit"]:hover {
+.registration-button:hover {
   background-color: #0056b3;
 }
 
 .error-message {
-  color: #dc3545;
-  margin-top: 10px;
-}
-
-p {
-  margin-top: 20px;
-}
-
-a {
-  color: #007bff;
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
-.password-mismatch {
   color: red;
   margin-top: 10px;
+}
+
+@media (max-width: 600px) {
+  .registration-container {
+    padding: 10px;
+  }
+}
+
+/* *****************************Job-notification page************************************** */
+.notification-container {
+  padding: 20px;
+  max-width: 1200px; /* Adjust max-width as needed */
+  margin: 120px auto;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.notification-container h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333333;
+}
+
+.search-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.search-form input[type="text"],
+.search-form select {
+  padding: 10px;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.search-form button[type="submit"] {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.search-form button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+.notification-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap; /* Allow items to wrap to the next line */
+  justify-content: space-between; /* Align items in the flex container */
+}
+
+.notification-item {
+  width: calc(25% - 20px); /* 4 columns per row with margin */
+  background-color: #f9f9f9;
+  border: 1px solid #dddddd;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.notification-item h2 {
+  color: #007bff;
+  margin-bottom: 10px;
+}
+
+.notification-item p {
+  margin: 5px 0;
+}
+
+.error-message {
+  color: #ff0000;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 768px) {
+  .notification-item {
+    width: calc(50% - 20px); /* 2 columns per row on smaller screens */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .notification-item {
+    width: 100%; /* 1 column per row on mobile screens */
+  }
 }

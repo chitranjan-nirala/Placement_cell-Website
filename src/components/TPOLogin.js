@@ -1,54 +1,7 @@
-// import React, { useState } from 'react';
-// import { useNavigate } from 'react-router-dom';
-// import '../App.css'; 
-
-// const TpoLogin = () => {
-//   const [tpoId, setTpoId] = useState('');
-//   const [password, setPassword] = useState('');
-//   const navigate = useNavigate();
-
-//   const handleLogin = (e) => {
-//     e.preventDefault();
-//     // Implement login logic here
-
-//     // On successful login
-//     navigate('/tpo-dashboard');
-//   };
-
-//   return (
-//     <div className="login-container">
-//       <div className="login-content">
-//         <h2>TPO Login</h2>
-//         <form onSubmit={handleLogin}>
-//           <div className="form-group">
-//             <label>TPO ID</label>
-//             <input
-//               type="text"
-//               value={tpoId}
-//               onChange={(e) => setTpoId(e.target.value)}
-//               required
-//             />
-//           </div>
-//           <div className="form-group">
-//             <label>Password</label>
-//             <input
-//               type="password"
-//               value={password}
-//               onChange={(e) => setPassword(e.target.value)}
-//               required
-//             />
-//           </div>
-//           <button type="submit" className="login-button">Login</button>
-//         </form>
-//       </div>
-//     </div>
-//   );
-// };
-
-// export default TpoLogin;
 
 
 
+// ********************************************
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import axios from 'axios';
