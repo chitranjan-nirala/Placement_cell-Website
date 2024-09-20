@@ -1,5 +1,9 @@
 # Placement Cell Website
 
+### Demo Video
+
+[Click here to watch the video](https://github.com/chitranjan-nirala/Placement_cell-Website/blob/main/Recording%202024-09-21%20025350.mp4)
+
 ## Table of Contents
 1. [Project Overview](#project-overview)
 2. [Features](#features)
